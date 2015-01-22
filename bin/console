@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+use Thatzad\Console\Application;
+use Symfony\Component\Console\Input\InputOption;
+
+require_once __DIR__.'/../vendor/autoload.php';
+
+set_time_limit(0);
+
+$console = new Application('Thatzad Console', '0.1');
+$console->setContainer(\Thatzad\Application::bootstrap());
+$console->getDefinition()->addOption(new InputOption(
+    '--env', '-e', InputOption::VALUE_REQUIRED, 'The Environment name.', 'dev'
+));
+
+// $console->add(new ThatzadCommand());
+$console->run();

@@ -1,0 +1,36 @@
+/* Reset
+----------------------------------------------------------------------------- */
+body,
+ul,
+ol,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a,
+img {
+    border: none;
+    outline: none
+}
+
+/* Template
+----------------------------------------------------------------------------- */
+body {
+
+}
+
+.wrapper {
+
+}
